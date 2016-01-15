@@ -12,6 +12,18 @@
 <title>无标题文档</title>
 <link rel="stylesheet" type="text/css" href="css/base.css">
 <link rel="stylesheet" type="text/css" href="css/common.css">
+<script>
+	var GCFG = function(){//全局常量,获取方法 eg:GCFC('PATH');
+		var cfgObject={
+			PATH:'../images/',//资源文件路径
+			URL:'SDDASD'
+		};
+		return function(type){
+			if(!cfgObject[type]) throw new Error(type+' is not defind in GCFG.');
+			return cfgObject[type];
+		};
+	}();
+</script>
 </head>
 
 <body>
