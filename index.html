@@ -13,13 +13,12 @@
 <link rel="stylesheet" type="text/css" href="css/base.css">
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <script>
-	var GCFG = function(){//全局常量,获取方法 eg:GCFC('PATH');
+	var GCFG = function(){//全局常量,获取方法 eg:GCFG('PATH');
 		var cfgObject={
-			PATH:'../images/',//资源文件路径
-			URL:'SDDASD'
+			IMGPATH:'../images/'//资源文件路径
 		};
 		return function(type){
-			if(!cfgObject[type]) throw new Error(type+' is not defind in GCFG.');
+			if(!cfgObject[type]) throw new Error(type+' is not be defind in GCFG.');
 			return cfgObject[type];
 		};
 	}();
@@ -31,10 +30,13 @@
 
 	<!-- body内容 -->
 <script src="js/motion.js"></script>
+<script src="js/onePage.js"></script>
 <script src="js/common.js"></script>
 <script>
 	// 页面初始代码内容
-	
+	$(window).ready(function(){
+		
+	})
 </script>
 </body>
 </html>
